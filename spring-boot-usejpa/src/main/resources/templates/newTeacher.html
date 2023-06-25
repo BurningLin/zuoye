@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title>Hello Teacher</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>教师名</td>
+        <td>密码</td>
+    </tr>
+    <tr th:each="newteacher:${newTeachers}">
+        <td th:text="${newteacher.name}"></td>
+        <td th:text="${newteacher.password}"></td>
+    </tr>
+</table>
+</body>
+</html>
